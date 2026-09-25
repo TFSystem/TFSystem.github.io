@@ -1,14 +1,14 @@
 :root {
   --bg: #0b0c0d;
   --text: #f0ece5;
-  --copper: #d9824b;
+  --amber: #f59e0b;
   color-scheme: dark;
 }
 
 :root[data-theme="light"] {
   --bg: #f4f1eb;
   --text: #1d1b18;
-  --copper: #8b431f;
+  --amber: #b45309;
   color-scheme: light;
 }
 
@@ -16,7 +16,7 @@
   :root:not([data-theme="dark"]) {
     --bg: #f4f1eb;
     --text: #1d1b18;
-    --copper: #8b431f;
+    --amber: #b45309;
     color-scheme: light;
   }
 }
@@ -50,20 +50,7 @@ body {
   line-height: 1;
 }
 
-.brand-mark {
-  display: grid;
-  width: 1.75em;
-  height: 1.75em;
-  place-items: center;
-  border: 1px solid var(--copper);
-  border-radius: 50%;
-  color: var(--copper);
-  font-size: .38em;
-  font-weight: 800;
-  letter-spacing: -.08em;
-}
-
-.brand-name strong { color: var(--copper); }
+.brand-name strong { color: var(--amber); }
 
 @media (max-width: 480px) {
   .brand-lockup { gap: .5rem; font-size: clamp(1.75rem, 11vw, 3rem); }
