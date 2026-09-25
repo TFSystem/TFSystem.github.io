@@ -12,7 +12,8 @@
       main { min-height: 100svh; display: flex; align-items: center; justify-content: center; padding: 1.5rem; overflow: hidden; }
       .brand-stack { display: flex; flex-direction: column; gap: .08rem; width: min(100%, 28rem); text-align: center; }
       .brand-line { display: block; font-size: clamp(1.35rem, 4vw, 2.5rem); font-weight: 500; letter-spacing: .02em; line-height: 1.02; }
-      .brand-line strong {
+      .brand-line strong { display:inline-flex; }
+      .tf-t, .tf-f {
         font-weight: inherit;
         background: linear-gradient(112deg, #7a3015 0%, #bd6230 18%, #ffd2a3 38%, #e28a4d 52%, #8b3919 76%, #f1a36b 100%);
         -webkit-background-clip: text;
@@ -21,6 +22,18 @@
         -webkit-text-fill-color: transparent;
         text-shadow: 0 0 .02em rgba(255, 194, 138, .22);
       }
+      .tf-t { filter: brightness(calc(var(--tf-brightness) * .88)); }
+      .tf-f { filter: brightness(calc(var(--tf-brightness) * 1.08)); }
+      .brand-stack .brand-line:nth-child(1) { --tf-brightness: 1.12; }
+      .brand-stack .brand-line:nth-child(2) { --tf-brightness: 1.06; }
+      .brand-stack .brand-line:nth-child(3) { --tf-brightness: 1; }
+      .brand-stack .brand-line:nth-child(4) { --tf-brightness: .94; }
+      .brand-stack .brand-line:nth-child(5) { --tf-brightness: .88; }
+      .brand-stack .brand-line:nth-child(6) { --tf-brightness: .82; }
+      .brand-stack .brand-line:nth-child(7) { --tf-brightness: .76; }
+      .brand-stack .brand-line:nth-child(8) { --tf-brightness: .7; }
+      .brand-stack .brand-line:nth-child(9) { --tf-brightness: .64; }
+      .brand-stack .brand-line:nth-child(10) { --tf-brightness: .58; }
       .logo-proposals { width:min(100%, 54rem); margin-top:2rem; display:grid; grid-template-columns:repeat(5,1fr); gap:.6rem; }
       .logo-proposal { padding:.65rem .35rem; border:1px solid rgba(217,130,75,.35); border-radius:.7rem; background:#151312; text-align:center; }
       .logo-circle { width:5rem; height:5rem; margin:auto; display:grid; place-items:center; border:2px solid #d9824b; border-radius:50%; color:#fff; font-size:1.35rem; font-weight:800; letter-spacing:-.1em; }
@@ -33,31 +46,16 @@
   <body>
     <main aria-label="TFSystem">
       <div class="brand-stack">
-        <span class="brand-line"><strong style="color:#fbbf24">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#f8b52a">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#f59e0b">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#eea20a">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#e99a0a">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#e39109">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#dd8909">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#d58008">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#ce7808">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#c87008">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#c16807">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#ba6007">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#b35806">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#ac5006">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#a54805">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#9e4005">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#973904">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#903204">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#892b03">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#822403">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#7b1d02">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#741602">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#6d0f01">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#660801">TF</strong>System</span>
-        <span class="brand-line"><strong style="color:#5f0100">TF</strong>System</span>
+        <span class="brand-line"><strong><span class="tf-t">T</span><span class="tf-f">F</span></strong>System</span>
+        <span class="brand-line"><strong><span class="tf-t">T</span><span class="tf-f">F</span></strong>System</span>
+        <span class="brand-line"><strong><span class="tf-t">T</span><span class="tf-f">F</span></strong>System</span>
+        <span class="brand-line"><strong><span class="tf-t">T</span><span class="tf-f">F</span></strong>System</span>
+        <span class="brand-line"><strong><span class="tf-t">T</span><span class="tf-f">F</span></strong>System</span>
+        <span class="brand-line"><strong><span class="tf-t">T</span><span class="tf-f">F</span></strong>System</span>
+        <span class="brand-line"><strong><span class="tf-t">T</span><span class="tf-f">F</span></strong>System</span>
+        <span class="brand-line"><strong><span class="tf-t">T</span><span class="tf-f">F</span></strong>System</span>
+        <span class="brand-line"><strong><span class="tf-t">T</span><span class="tf-f">F</span></strong>System</span>
+        <span class="brand-line"><strong><span class="tf-t">T</span><span class="tf-f">F</span></strong>System</span>
       </div>
       <section class="logo-proposals" aria-label="Zehn TFSystem Logo-Entwürfe">
         <article class="logo-proposal"><div class="logo-circle"><b>TF</b></div><p>01 · TF-Ring</p></article>
