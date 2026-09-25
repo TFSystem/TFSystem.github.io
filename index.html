@@ -65,8 +65,16 @@
       .logo-circle small { display:block; margin-top:.2rem; color:#fff; font-size:.42rem; letter-spacing:.12em; font-weight:500; }
       .logo-proposal p { margin:.45rem 0 0; color:#a9a19a; font-size:.65rem; }
       .logo-proposals { display:none; }
-      .creative-grid { display:grid; }
-      .creative-card:nth-child(n+11) { display:none; }
+      .creative-grid { display:none; }
+      .reference-grid { width:min(100%,68rem); margin:2rem auto 0; display:grid; grid-template-columns:repeat(5,1fr); gap:.7rem; }
+      .reference-card { padding:.7rem .35rem; border:1px solid rgba(217,130,75,.35); border-radius:.7rem; background:#151312; text-align:center; }
+      .reference-card svg { width:100%; max-width:9rem; height:auto; }
+      .reference-card p { margin:.25rem 0 0; color:#a9a19a; font-size:.65rem; }
+      .reference-card .ring { fill:none; stroke:#9d4a22; stroke-width:2; }
+      .reference-card .accent { fill:none; stroke:#e29a63; stroke-width:1.2; }
+      .reference-card .initials { fill:url(#reference-metal); font-size:43px; font-weight:800; letter-spacing:-5px; }
+      .reference-card .system { fill:#f4f1eb; font-size:10px; letter-spacing:2px; }
+      .reference-card .system-accent { fill:#e29a63; font-size:10px; letter-spacing:2px; }
       .creative-card { padding:.7rem .35rem; border:1px solid rgba(217,130,75,.35); border-radius:.7rem; background:#151312; text-align:center; }
       .creative-card svg { width:100%; max-width:9rem; height:auto; overflow:visible; }
       .creative-card p { margin:.25rem 0 0; color:#a9a19a; font-size:.65rem; }
@@ -145,6 +153,18 @@
         <article class="creative-card"><svg viewBox="0 0 160 160"><defs><path id="b8" d="M20 106 A64 64 0 0 0 140 106"/></defs><circle class="ring" cx="80" cy="80" r="61"/><path class="accent" d="M20 106 A64 64 0 0 0 140 106"/><text class="initials" x="80" y="93" text-anchor="middle">TF</text><text class="system-accent"><textPath href="#b8" startOffset="50%" text-anchor="middle">TF SYSTEM</textPath></text></svg><p>28 · Randname</p></article>
         <article class="creative-card"><svg viewBox="0 0 160 160"><defs><path id="b9" d="M34 102 A50 50 0 0 0 126 102"/></defs><circle class="ring" cx="80" cy="80" r="61"/><path class="accent" d="M34 102 A50 50 0 0 0 126 102"/><text class="initials" x="80" y="93" text-anchor="middle">TF</text><text class="system"><textPath href="#b9" startOffset="50%" text-anchor="middle">SYSTEM</textPath></text></svg><p>29 · Signet kompakt</p></article>
         <article class="creative-card"><svg viewBox="0 0 160 160"><defs><path id="b10" d="M24 110 A60 60 0 0 0 136 110"/></defs><circle class="ring" cx="80" cy="80" r="61"/><path class="accent" d="M24 110 A60 60 0 0 0 136 110"/><text class="initials" x="80" y="93" text-anchor="middle">TF</text><text class="system-accent"><textPath href="#b10" startOffset="50%" text-anchor="middle">SYSTEM</textPath></text></svg><p>30 · Schlussbogen</p></article>
+      </section>
+      <section class="reference-grid" aria-label="Zehn neue Logo-Entwürfe nach dem TF-Kreislogo">
+        <article class="reference-card"><svg viewBox="0 0 160 160"><defs><linearGradient id="reference-metal" x1="0" x2="1"><stop stop-color="#7a3015"/><stop offset=".45" stop-color="#ffd2a3"/><stop offset="1" stop-color="#a9431b"/></linearGradient><path id="r1" d="M28 105 A55 55 0 0 0 132 105"/></defs><circle class="ring" cx="80" cy="80" r="61"/><text class="initials" x="80" y="94" text-anchor="middle">TF</text><text class="system"><textPath href="#r1" startOffset="50%" text-anchor="middle">SYSTEM</textPath></text></svg><p>01 · Unter dem Ring</p></article>
+        <article class="reference-card"><svg viewBox="0 0 160 160"><defs><path id="r2" d="M22 96 A62 62 0 0 0 138 96"/></defs><circle class="ring" cx="80" cy="80" r="61"/><text class="initials" x="80" y="94" text-anchor="middle">TF</text><text class="system-accent"><textPath href="#r2" startOffset="50%" text-anchor="middle">SYSTEM</textPath></text></svg><p>02 · Nah am Rand</p></article>
+        <article class="reference-card"><svg viewBox="0 0 160 160"><defs><path id="r3" d="M25 88 A60 60 0 0 0 135 88"/></defs><circle class="ring" cx="80" cy="80" r="61"/><text class="initials" x="80" y="96" text-anchor="middle">TF</text><text class="system"><textPath href="#r3" startOffset="50%" text-anchor="middle">SYSTEM</textPath></text></svg><p>03 · Im Innenbogen</p></article>
+        <article class="reference-card"><svg viewBox="0 0 160 160"><defs><path id="r4" d="M31 112 A52 52 0 0 0 129 112"/></defs><circle class="ring" cx="80" cy="80" r="61"/><path class="accent" d="M31 112 A52 52 0 0 0 129 112"/><text class="initials" x="80" y="92" text-anchor="middle">TF</text><text class="system-accent"><textPath href="#r4" startOffset="50%" text-anchor="middle">SYSTEM</textPath></text></svg><p>04 · Doppelter Unterrand</p></article>
+        <article class="reference-card"><svg viewBox="0 0 160 160"><defs><path id="r5" d="M22 83 A62 62 0 0 0 138 83"/></defs><circle class="ring" cx="80" cy="80" r="61"/><text class="initials" x="80" y="98" text-anchor="middle">TF</text><text class="system"><textPath href="#r5" startOffset="50%" text-anchor="middle">SYSTEM</textPath></text></svg><p>05 · Oberer Bogen</p></article>
+        <article class="reference-card"><svg viewBox="0 0 160 160"><defs><path id="r6" d="M18 101 A65 65 0 0 0 142 101"/></defs><circle class="ring" cx="80" cy="80" r="61"/><path class="accent" d="M18 101 A65 65 0 0 0 142 101"/><text class="initials" x="80" y="93" text-anchor="middle">TF</text><text class="system-accent"><textPath href="#r6" startOffset="50%" text-anchor="middle">TF SYSTEM</textPath></text></svg><p>06 · Vollname am Rand</p></article>
+        <article class="reference-card"><svg viewBox="0 0 160 160"><defs><path id="r7" d="M34 108 A50 50 0 0 0 126 108"/></defs><circle class="ring" cx="80" cy="80" r="61"/><circle class="accent" cx="80" cy="80" r="52"/><text class="initials" x="80" y="94" text-anchor="middle">TF</text><text class="system"><textPath href="#r7" startOffset="50%" text-anchor="middle">SYSTEM</textPath></text></svg><p>07 · Innenring</p></article>
+        <article class="reference-card"><svg viewBox="0 0 160 160"><defs><path id="r8" d="M26 110 A58 58 0 0 0 134 110"/></defs><circle class="ring" cx="80" cy="80" r="61"/><path class="accent" d="M26 110 A58 58 0 0 0 134 110"/><text class="initials" x="80" y="93" text-anchor="middle">TF</text><text class="system-accent"><textPath href="#r8" startOffset="50%" text-anchor="middle">SYSTEM</textPath></text></svg><p>08 · Außenkontur</p></article>
+        <article class="reference-card"><svg viewBox="0 0 160 160"><defs><path id="r9" d="M27 98 A58 58 0 0 0 133 98"/></defs><circle class="ring" cx="80" cy="80" r="61"/><path class="accent" d="M30 53 Q80 24 130 53"/><text class="initials" x="80" y="94" text-anchor="middle">TF</text><text class="system"><textPath href="#r9" startOffset="50%" text-anchor="middle">SYSTEM</textPath></text></svg><p>09 · Dach und Basis</p></article>
+        <article class="reference-card"><svg viewBox="0 0 160 160"><defs><path id="r10" d="M20 106 A64 64 0 0 0 140 106"/></defs><circle class="ring" cx="80" cy="80" r="61"/><path class="accent" d="M20 106 A64 64 0 0 0 140 106"/><text class="initials" x="80" y="93" text-anchor="middle">TF</text><text class="system-accent"><textPath href="#r10" startOffset="50%" text-anchor="middle">SYSTEM</textPath></text></svg><p>10 · Weite Außenlinie</p></article>
       </section>
     </main>
   </body>
