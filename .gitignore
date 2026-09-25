@@ -1,6 +1,7 @@
 # Local Next.js output and dependencies
 .next/
 node_modules/
+out/
 
 # Next.js generated agent guidance
 AGENTS.md
